@@ -1,4 +1,4 @@
-Follow
+# Follow
 
 Prerequisites
 Please follow below steps to install and setup all prerequisites:
@@ -9,10 +9,8 @@ npm 8.19.2
 
 Git 2.30.1
 
-
-
-Build Setup
-
+# Build Setup
+```
 # install dependencies
 $ npm install
 
@@ -25,6 +23,5 @@ $ npm start
 
 # generate static project
 $ npm generate
-
-
+```
 For detailed explanation on how things work, check out Nuxt.js docs.
