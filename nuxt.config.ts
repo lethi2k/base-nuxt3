@@ -2,7 +2,6 @@ import { defineNuxtConfig } from 'nuxt'
 import { IntlifyModuleOptions } from '@intlify/nuxt3'
 import UnpluginComponentsVite from 'unplugin-vue-components/vite'
 import IconsResolver from 'unplugin-icons/resolver'
-import ElementPlus from 'unplugin-element-plus/vite'
 
 declare module '@nuxt/schema' {
   interface NuxtConfig {
@@ -46,15 +45,7 @@ export default defineNuxtConfig({
 
   // build
   build: {
-    transpile: [
-      '@headlessui/vue',
-      'element-plus/es',
-    ],
-  },
-
-  typescript: {
-    strict: true,
-    shim: false,
+    transpile: ['@headlessui/vue'],
   },
 
   // modules
@@ -66,16 +57,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxtjs/eslint-module',
     'nuxt-windicss',
-    '@unocss/nuxt',
   ],
-
-  unocss: {
-    uno: true,
-    attributify: true,
-    icons: {
-      scale: 1.2,
-    },
-  },
 
   // experimental features
   experimental: {
@@ -88,7 +70,6 @@ export default defineNuxtConfig({
   // vite plugins
   vite: {
     plugins: [
-      ElementPlus(),
       UnpluginComponentsVite({
         dts: true,
         resolvers: [

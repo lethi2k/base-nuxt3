@@ -18,7 +18,7 @@
           <ThemeSwitcher />
           <Anchor
             class="hover:no-underline hover:text-slate-900 hover:dark:text-white text-lg flex self-center items-center"
-            href="https://github.com/viandwi24/nuxt3-awesome-starter"
+            href="https://github.com/lethi2k/base-nuxt3"
             title="Github"
           >
             <IconMdi:github-face />
@@ -46,7 +46,7 @@
         <Button
           type="secondary"
           title="Github"
-          href="https://github.com/viandwi24/nuxt3-awesome-starter"
+          href="https://github.com/lethi2k/base-nuxt3"
         >
           <IconMdi:github-face />
           <span class="ml-1">Github</span>

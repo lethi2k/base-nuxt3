@@ -9,11 +9,6 @@ export interface ILocales {
 }
 
 export const availableLocales: ILocales = {
-  ja: {
-    name: '日本語',
-    iso: 'ja',
-    flag: '🇯🇵',
-  },
   en: {
     name: 'English',
     iso: 'en',
@@ -23,6 +18,11 @@ export const availableLocales: ILocales = {
     name: 'Bahasa',
     iso: 'id',
     flag: '🇮🇩',
+  },
+  ja: {
+    name: '日本語',
+    iso: 'ja',
+    flag: '🇯🇵',
   },
   ko: {
     name: '한국어',
@@ -41,10 +41,10 @@ export function LanguageManager() {
     try {
       const foundLang = window
         ? window.navigator.language.substring(0, 2)
-        : 'ja'
-      return availableLocales[foundLang] ? foundLang : 'ja'
+        : 'en'
+      return availableLocales[foundLang] ? foundLang : 'en'
     } catch (error) {
-      return 'ja'
+      return 'en'
     }
   }
   const getUserLocale = (): string =>

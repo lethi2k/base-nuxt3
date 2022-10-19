@@ -36,15 +36,15 @@ _This template was built to make it easier to create web projects using Nuxt 3. 
 <table align="center">
   <tr>
     <td align="center" width="100%" colspan="2">
-      <img src="https://github.com/viandwi24/nuxt3-awesome-starter/blob/main/assets/images/preview_new.png?raw=true" alt="Preview" title="Preview">
+      <img src="https://github.com/lethi2k/base-nuxt3/blob/main/assets/images/preview_new.png?raw=true" alt="Preview" title="Preview">
     </td>
   </tr>
   <tr>
     <td align="center" width="75%">
-      <img src="https://github.com/viandwi24/nuxt3-awesome-starter/blob/main/assets/images/preview.gif?raw=true" alt="Preview" title="Preview">
+      <img src="https://github.com/lethi2k/base-nuxt3/blob/main/assets/images/preview.gif?raw=true" alt="Preview" title="Preview">
     </td>
     <td align="center" width="25%">
-      <img src="https://github.com/viandwi24/nuxt3-awesome-starter/blob/main/assets/images/preview_mobile.gif?raw=true" alt="Preview" title="Preview">
+      <img src="https://github.com/lethi2k/base-nuxt3/blob/main/assets/images/preview_mobile.gif?raw=true" alt="Preview" title="Preview">
     </td>
   </tr>
 </table>
@@ -54,11 +54,11 @@ _This template was built to make it easier to create web projects using Nuxt 3. 
     Live Demo
   </a>
   <br><br>
-  <a href="https://codesandbox.io/s/github/viandwi24/nuxt3-awesome-starter" title="Open In Code Sandbox">
+  <a href="https://codesandbox.io/s/github/lethi2k/nuxt3-awesome-starter" title="Open In Code Sandbox">
     <img src="https://img.shields.io/badge/Open%20in-CodeSandbox-blue?style=flat-square&logo=codesandboxg" alt="Open In Code Sandbox">
   </a>
   <br>
-  <a href="https://stackblitz.com/github/viandwi24/nuxt3-awesome-starter" title="Open In Stackblitz">
+  <a href="https://stackblitz.com/github/lethi2k/nuxt3-awesome-starter" title="Open In Stackblitz">
     <img src="https://developer.stackblitz.com/img/open_in_stackblitz.svg" alt="Open In Stackblitz">
   </a>
 </p>
@@ -88,7 +88,7 @@ _This template was built to make it easier to create web projects using Nuxt 3. 
 For detail information, go here [Getting Started](https://nuxt3-awesome-starter.vercel.app/getting-started)
 ### Start with this template
 * This project using `pnpm` as package manager.
-* Clone this project to your computer `git clone https://github.com/viandwi24/nuxt3-awesome-starter`
+* Clone this project to your computer `git clone https://github.com/lethi2k/base-nuxt3`
 * Install dependencies `pnpm install`
 * Run `pnpm dev` to start development server and open `http://localhost:3000` in your browser
 ### Deploy as Static Site
@@ -197,7 +197,7 @@ When you change state `locale.setting`, it will automatically change language.
 
 ### Generate Locales
 I made an automatic tool to automatically translate to all languages ​​that have been prepared in the ./locales/ folder
-So, you can just update "locales/en.yml" and run this tools, it will automatically translate to all languages.
+So, you can just update "locales/en.json" and run this tools, it will automatically translate to all languages.
 
 You can just run :
 ```

@@ -13,15 +13,7 @@
 <script lang="ts" setup>
 import { AppSetup } from './utils/app'
 import { ITheme } from './utils/theme'
-import { ID_INJECTION_KEY } from 'element-plus'
-
-provide(ID_INJECTION_KEY, {
-  prefix: 100,
-  current: 0,
-})
-
 AppSetup()
 const theme = useState<ITheme>('theme.current')
 const locale = useState<string>('locale.setting')
-
 </script>

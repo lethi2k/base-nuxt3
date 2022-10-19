@@ -14,16 +14,6 @@ const menus = computed((): IMenuItem[] => [
   {
     type: 'link',
     text: t('pages.getting-started.nav'),
-    route: { name: 'getting-started' },
-  },
-  { type: 'link', text: t('pages.blank.nav'), route: { name: 'blank' } },
-  { type: 'link', text: t('pages.test.nav'), route: { name: 'test' } },
-  { type: 'link', text: t('pages.post.nav'), route: { name: 'post' } },
-  { type: 'link', text: t('pages.setting.nav'), route: { name: 'setting' } },
-  {
-    type: 'button',
-    text: t('pages.dashboard.nav'),
-    route: { name: 'dashboard' },
   },
 ])
 </script>
@@ -40,7 +30,7 @@ const menus = computed((): IMenuItem[] => [
         <Anchor
           class="underline font-bold"
           :text="$t('others.learn_more')"
-          href="https://github.com/viandwi24/nuxt3-awesome-starter"
+          href="https://github.com/lethi2k/base-nuxt3"
         />
       </div>
     </template>
@@ -77,7 +67,7 @@ const menus = computed((): IMenuItem[] => [
           <ThemeSwitcher />
           <Anchor
             class="hover:no-underline hover:text-slate-900 hover:dark:text-white text-lg flex self-center items-center"
-            href="https://github.com/viandwi24/nuxt3-awesome-starter"
+            href="https://github.com/lethi2k/base-nuxt3"
             title="Github"
           >
             <IconMdi:github-face />
@@ -131,14 +121,6 @@ const menus = computed((): IMenuItem[] => [
             <LanguageSwitcher type="select-box" />
           </div>
         </ActionSheetBody>
-        <Button
-          type="secondary"
-          title="Github"
-          href="https://github.com/viandwi24/nuxt3-awesome-starter"
-        >
-          <IconMdi:github-face />
-          <span class="ml-1">Github</span>
-        </Button>
         <Button
           text="Close"
           type="secondary"
