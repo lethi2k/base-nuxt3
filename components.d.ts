@@ -7,8 +7,6 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    Icon: ic:baselineArrowRightAlt': typeof import('~icons/ic/baseline-arrow-right-alt')['default']
-    'Icon:ic:baselineArrowRightAlt': typeof import('~icons/ic/baseline-arrow-right-alt')['default']
     IconBi: exclamationCircleFill': typeof import('~icons/bi/exclamation-circle-fill')['default']
     'IconBi:exclamationCircleFill': typeof import('~icons/bi/exclamation-circle-fill')['default']
     IconClarity: timesLine': typeof import('~icons/clarity/times-line')['default']
@@ -16,8 +14,6 @@ declare module '@vue/runtime-core' {
     'IconClarity:timesLine': typeof import('~icons/clarity/times-line')['default']
     IconFaSolid: ellipsisV': typeof import('~icons/fa-solid/ellipsis-v')['default']
     'IconFaSolid:ellipsisV': typeof import('~icons/fa-solid/ellipsis-v')['default']
-    IconIc: baselineContentCopy': typeof import('~icons/ic/baseline-content-copy')['default']
-    'IconIc:baselineContentCopy': typeof import('~icons/ic/baseline-content-copy')['default']
     IconLa: language': typeof import('~icons/la/language')['default']
     'IconLa:language': typeof import('~icons/la/language')['default']
     IconMaterialSymbols: contentCopyOutline': typeof import('~icons/material-symbols/content-copy-outline')['default']

@@ -64,5 +64,8 @@
     "**/*.{js,ts,vue,html}": [
       "pnpm lintfix"
     ]
+  },
+  "dependencies": {
+    "element-plus": "^2.2.18"
   }
 }

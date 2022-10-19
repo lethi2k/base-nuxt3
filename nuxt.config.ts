@@ -1,3 +1,4 @@
+import { resolve } from 'path'
 import { defineNuxtConfig } from 'nuxt'
 import { IntlifyModuleOptions } from '@intlify/nuxt3'
 import UnpluginComponentsVite from 'unplugin-vue-components/vite'
@@ -13,6 +14,18 @@ declare module '@nuxt/schema' {
 export default defineNuxtConfig({
   // server side rendering mode
   ssr: true,
+
+  target: 'static',
+  alias: {
+    'element-plus/dist/index.css': resolve(
+      __dirname,
+      './node_modules/element-plus/dist/index.css'
+    ),
+    'element-plus': resolve(
+      __dirname,
+      './node_modules/element-plus/dist/index.full.js'
+    ),
+  },
 
   // app
   app: {
@@ -41,7 +54,7 @@ export default defineNuxtConfig({
   ],
 
   // plugins
-  plugins: ['~/plugins/navbar.ts'],
+  plugins: ['~/plugins/navbar.ts', '~/plugins/ui.ts'],
 
   // build
   build: {
@@ -69,6 +82,9 @@ export default defineNuxtConfig({
 
   // vite plugins
   vite: {
+    optimizeDeps: {
+      include: ['element-plus'],
+    },
     plugins: [
       UnpluginComponentsVite({
         dts: true,
