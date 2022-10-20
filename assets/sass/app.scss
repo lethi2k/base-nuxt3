@@ -3,6 +3,12 @@
 // vars
 @import 'variables';
 
+body{
+  background: #EEEEEE !important;
+  height: 100% !important;
+
+}
+
 // components
 ::-webkit-scrollbar {
   width: 16px;

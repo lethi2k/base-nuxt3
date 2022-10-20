@@ -1,7 +1,7 @@
 import { resolve } from 'path'
 import { defineNuxtConfig } from 'nuxt'
 import { IntlifyModuleOptions } from '@intlify/nuxt3'
-import UnpluginComponentsVite from 'unplugin-vue-components/vite'
+// import UnpluginComponentsVite from 'unplugin-vue-components/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 
 declare module '@nuxt/schema' {
@@ -60,6 +60,7 @@ export default defineNuxtConfig({
   build: {
     transpile: ['@headlessui/vue'],
   },
+  //  
 
   // modules
   modules: [
@@ -69,8 +70,37 @@ export default defineNuxtConfig({
     // '@nuxt/content',
     // '@vueuse/nuxt',
     '@nuxtjs/eslint-module',
-    // 'nuxt-windicss',
+    'nuxt-windicss',
+    // ["@nuxtjs/axios", { proxyHeaders: false }],
+    // '@nuxtjs/auth-next'
   ],
+  // axios: {
+  //   proxy: true
+  // },
+  // proxy: {
+  //   '/api': 'http://localhost:8888/api/v1',
+  // },
+  auth: {
+    strategies: {
+      local: {
+        token: {
+          property: 'data.access_token',
+          global: true,
+          // required: true,
+          type: 'Bearer'
+        },
+        user: {
+          property: 'user',
+          // autoFetch: true
+        },
+        endpoints: {
+          login: { url: '/login', method: 'post' },
+          logout: { url: '/logout', method: 'post' },
+          user: { url: '/profile', method: 'get' }
+        }
+      }
+    }
+  },
 
   // experimental features
   experimental: {
@@ -81,21 +111,21 @@ export default defineNuxtConfig({
   components: true,
 
   // vite plugins
-  vite: {
-    optimizeDeps: {
-      include: ['element-plus'],
-    },
-    plugins: [
-      UnpluginComponentsVite({
-        dts: true,
-        resolvers: [
-          IconsResolver({
-            prefix: 'Icon',
-          }),
-        ],
-      }),
-    ],
-  },
+  // vite: {
+  //   optimizeDeps: {
+  //     include: ['element-plus'],
+  //   },
+  //   plugins: [
+  //     UnpluginComponentsVite({
+  //       dts: true,
+  //       resolvers: [
+  //         IconsResolver({
+  //           prefix: 'Icon',
+  //         }),
+  //       ],
+  //     }),
+  //   ],
+  // },
 
   // localization - i18n config
   intlify: {
