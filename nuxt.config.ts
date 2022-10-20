@@ -46,10 +46,10 @@ export default defineNuxtConfig({
 
   // css
   css: [
-    'virtual:windi-base.css',
-    'virtual:windi-components.css',
-    'virtual:windi-utilities.css',
-    '~/assets/sass/vendor.scss',
+    // 'virtual:windi-base.css',
+    // 'virtual:windi-components.css',
+    // 'virtual:windi-utilities.css',
+    // '~/assets/sass/vendor.scss',
     '~/assets/sass/app.scss',
   ],
 
@@ -65,11 +65,11 @@ export default defineNuxtConfig({
   modules: [
     'unplugin-icons/nuxt',
     '@intlify/nuxt3',
-    '@pinia/nuxt',
-    '@nuxt/content',
-    '@vueuse/nuxt',
+    // '@pinia/nuxt',
+    // '@nuxt/content',
+    // '@vueuse/nuxt',
     '@nuxtjs/eslint-module',
-    'nuxt-windicss',
+    // 'nuxt-windicss',
   ],
 
   // experimental features
@@ -113,18 +113,18 @@ export default defineNuxtConfig({
   },
 
   // windicss
-  windicss: {
-    analyze: {
-      analysis: {
-        interpretUtilities: false,
-      },
-      server: {
-        port: 4000,
-        open: false,
-      },
-    },
-    scan: true,
-  },
+  // windicss: {
+  //   analyze: {
+  //     analysis: {
+  //       interpretUtilities: false,
+  //     },
+  //     server: {
+  //       port: 4000,
+  //       open: false,
+  //     },
+  //   },
+  //   scan: true,
+  // },
 
   // content
   content: {
